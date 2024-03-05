@@ -13,23 +13,32 @@
     min-height: 100vh;
     background-color: #000000;
     color: #9ad79b;
+    min-width: 460px ;
+    max-width: 1289;
+    border: #ffffff 1px dashed;
+
   }
   header{
     padding: 10px;
     position: fixed;
     top:20px;
     border: #9ad79b 1px dashed;
-    width: 1500px;
+    /* min-width: 400px ;
+    max-width: 1200px ; */
     background-color: #000000;
-    }
+    margin: 5px;
+    width:100%;
+}
 .content{
   border:#9ad79b 2px dashed;
   padding: 10px;
   margin-top: 100px;
+  /* min-width: 400px ;
+  max-width: 1200px ; */
 }
 .sidebar{
   position:relative;
-  left: 1350px;
+  left:65%;
   border: #9ad79b 1px dashed;
   padding: 5px;
   margin-top: 20px;
@@ -37,8 +46,10 @@
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 20px;
+  width: fit-content;
   
-}
+  
+  }
 .features{
   text-align: center;
   border: #9ad79b 2px dashed;
@@ -51,4 +62,19 @@ footer{
   margin-top: 200px;
   margin-bottom: 15px;
   padding: 10px;
+}
+@media screen and (min-width: 585px) {
+  .sidebar{
+    position:relative;
+  left:88%;
+  border: #9ad79b 1px dashed;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  width: fit-content;
+  }
+  
 }
